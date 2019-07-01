@@ -8,12 +8,50 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerLink="/home">
+              <ion-label>Accueil</ion-label>
+            </ion-item>
+            <ion-item-divider>
+              <ion-label>Nos services pour vous</ion-label>
+            </ion-item-divider>
+            <ion-item routerLink="/menuvolontaire">
+              <ion-label>Assuré volontaire</ion-label>
+            </ion-item>
+            <ion-item routerLink="/menuemployeur">
+              <ion-label>Employeur</ion-label>
+            </ion-item>
+            <ion-item routerLink="/menuemploye">
+              <ion-label>Employé</ion-label>
+            </ion-item>
+
+            <ion-item-divider>
               <ion-label>
-                {{p.title}}
+                Bon à savoir
               </ion-label>
+            </ion-item-divider>
+            <ion-item routerLink="/home">
+              <ion-label>Bon à savoir</ion-label>
+            </ion-item>
+            <ion-item routerLink="/home">
+              <ion-label>Nos appels d'offres</ion-label>
+            </ion-item>
+            <ion-item  routerLink="/listdocs">
+              <ion-label>Documentation</ion-label>
+            </ion-item>
+            <ion-item routerLink="/home">
+              <ion-label>Babillard</ion-label>
+            </ion-item>
+            <ion-item-divider>
+              <ion-label>
+                Qui sommes-nous ?
+              </ion-label>
+            </ion-item-divider>
+            <ion-item routerLink="/home">
+              <ion-label>A propos de nous</ion-label>
+            </ion-item>
+            <ion-item routerLink="/home">
+              <ion-label>Nos agences</ion-label>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>

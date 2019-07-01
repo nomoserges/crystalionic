@@ -1,5 +1,7 @@
 {
   "name": "ulogMobileV5",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

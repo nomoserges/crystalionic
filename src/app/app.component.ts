@@ -12,15 +12,39 @@ export class AppComponent {
   public appPages = [
     {
       title: 'Home',
-      url: '/home',
-      icon: 'home'
+      url: '/home'
     },
     {
       title: 'List',
-      url: '/list',
-      icon: 'list'
+      url: '/list'
+    },{
+      title: 'Assurés volontaire',
+      url: '/listdocs'
+    },{
+      title: 'Employeur',
+      url: '/listdocs'
+    },{
+      title: 'Employé',
+      url: '/listdocs'
+    },{
+      title: 'Nos appels d\'offres ',
+      url: '/listdocs'
+    },{
+      title: 'Documentation',
+      url: '/listdocs'
+    },{
+      title: 'Babillard',
+      url: '/listdocs'
+    },{
+      title: 'A propos de nous',
+      url: '/listdocs'
+    },{
+      title: 'Nos agences',
+      url: '/listdocs'
     }
   ];
+
+/* Pages documentation */
 
   constructor(
     private platform: Platform,
